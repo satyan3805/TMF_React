@@ -73,5 +73,27 @@ add /node_modules entry to .gitignore file.
 -- delete node_modules delete .parcel-cache and re install 
 >npm install
 
+-- observe parcel-cache leads to faster builds 2nd build onwards
 --observe every changes you made instantly reflects on browser. -- its taken care by parcel.
+--refer parceljs.org
+
+11: if we need production build
+>npx parcel build index.html
+
+-- in packge.js find "main": "App.js", if this conflicts with above build statemtn it will give error.
+-- remove "main": "App.js" from package.json and run above build 
+-- observe dist folder got updated after build command
+-- even if we delete dist folder, it will re create.
+
+
+--refer : https://browserslist.dev/ 
+-- https://github.com/browserslist/browserslist#query-composition
+
+12: add browser compatibility:
+add below to pacakge.json
+
+"browserslist":{
+      "last 10 chrome versions",
+      "lst 2 firefox version"
+  }
 
