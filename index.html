@@ -7,29 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div id="root">
-        <h1>HTML HEADING with HTML Tags!!</h1>
+        <h1>this is satya.n.</h1>
     </div>
 
-    <script>
-        //creating javascript element h1
-        var hOne = document.createElement("h1");
-        hOne.innerHTML = "HEADING with Javascript";
-        
-        //fetching root element or container of the page
-        var rootElement = document.getElementById("root");
-
-        rootElement.appendChild(hOne);
-    </script>
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <script>
-        var hOneReact = React.createElement("h1",{},"HEADING CREATED using React");
-        var htmlRoot = document.getElementById("root");
-        var rootReact = ReactDOM.createRoot(htmlRoot);
-        rootReact.render(hOneReact);
-    </script>
+    <script type="module" src="./App.js"></script>
 </body>
 </html>
